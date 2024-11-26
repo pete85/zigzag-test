@@ -1,6 +1,10 @@
 # zigzag-test
  Test for ZigZag
 
+Huge problem fixed. Jack Russell Terrier added.
+
+Underscores for private
+
 ## Configuration
 
 Scripts in package.json to run both FE & BE

@@ -25,7 +25,7 @@ export class BreedController {
   }
 
   /**
-   * Get breed details by breed name provided
+   * Get breed details by breed name provided. This returns an array as multiple results might be returned for given name
    * @param name
    */
   @Get('details')

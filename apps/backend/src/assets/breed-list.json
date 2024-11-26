@@ -1,5 +1,20 @@
 [
   {
+    "name": "Jack Russell Terrier",
+    "description": "Jack Russell Terriers are energetic, fearless, and independent dogs with a strong hunting instinct. They are small in size but have a big personality and require an active lifestyle to match their enthusiasm.",
+    "size": "Small",
+    "origin": "England",
+    "lifeExpectancy": "13-16 years",
+    "temperament": [
+      "Energetic",
+      "Fearless",
+      "Alert",
+      "Intelligent",
+      "Independent"
+    ],
+    "image": "https://pete85.com/assets/images/jack-russell-terrier.jpg"
+  },
+  {
     "name": "Labrador Retriever",
     "description": "Labrador Retrievers are friendly, outgoing, and high-spirited companions who have more than enough affection to go around for a family looking for a medium-to-large dog.",
     "size": "Medium to Large",

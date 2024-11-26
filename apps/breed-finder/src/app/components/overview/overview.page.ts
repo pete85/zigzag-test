@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { getBreedList, selectBreed } from '../../state/breeds/breed.actions';
 import { breedReducer } from '../../state/breeds/breed.reducer';
@@ -11,20 +11,21 @@ import { Observable, startWith } from 'rxjs';
   imports: [AsyncPipe],
   selector: 'app-overview',
   templateUrl: './overview.page.html',
-  styleUrls: ['overview.page.scss']
+  styleUrls: ['overview.page.scss'],
 })
 export class OverviewPageComponent implements OnInit {
-  breedList$: Observable<string[]> = this._store.select(breedReducer.selectBreedList).pipe(
-    startWith([])
-  );
+  breedList$: Observable<string[]> = this._store
+    .select(breedReducer.selectBreedList)
+    .pipe(startWith([]));
 
-  constructor(private _store: Store) {}
+  constructor(private _store: Store, private _router: Router) {}
 
-  ngOnInit(){
-    this._store.dispatch(getBreedList())
+  ngOnInit() {
+    this._store.dispatch(getBreedList());
   }
 
   selectBreed(breed: string) {
     this._store.dispatch(selectBreed({ selectedBreed: breed }));
+    this._router.navigate(['/breed', breed]);
   }
 }

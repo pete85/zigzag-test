@@ -1,0 +1,19 @@
+<div *ngIf="breedData; else loading">
+  <div class="breed-details">
+    <h2>{{ breedData?.name }}</h2>
+    <p><strong>Description:</strong> {{ breedData?.description }}</p>
+    <p><strong>Origin:</strong> {{ breedData?.origin }}</p>
+    <p><strong>Size:</strong> {{ breedData?.size }}</p>
+    <p><strong>Life Expectancy:</strong> {{ breedData?.lifeExpectancy }}</p>
+    <p *ngIf="breedData?.temperament">
+      <strong>Temperament:</strong> {{ breedData.temperament.join(', ') }}
+    </p>
+    <img [src]="breedData?.image" alt="{{ breedData?.name }}" class="img-fluid">
+  </div>
+</div>
+
+<ng-template #loading>
+  <div class="loading">
+    <p>Loading breed details...</p>
+  </div>
+</ng-template>
