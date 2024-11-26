@@ -36,8 +36,10 @@ export const breedReducer = createFeature({
     })),
     on(getBreedDetailsFailure, (state, { error }) => ({
       ...state,
-      error: error.message,
-      breedDetails: null
+      breedDetails: null,
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
+      error: error,
     }))
   ),
 });

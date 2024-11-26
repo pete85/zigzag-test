@@ -13,3 +13,8 @@ export const selectBreedDetails = createSelector(
   (state: BreedState) => state.breedDetails
 );
 
+export const selectBreedError = createSelector(
+  selectBreedState,
+  (state) => state.error
+);
+

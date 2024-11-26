@@ -25,7 +25,6 @@ export class BreedEffects {
       concatMap(() => {
           return this._breedService.getBreedList().pipe(
             map((breeds) => {
-              console.log('Service returned breeds:', breeds);
               return getBreedListSuccess({ breeds });
             }),
             catchError((e) => of(getBreedListFailure({ error: e }))),
@@ -35,32 +34,15 @@ export class BreedEffects {
     );
   });
 
-
-  // getBreedDetails$ = createEffect(() => {
-  //   return this._actions$.pipe(
-  //     ofType(getBreedDetails),
-  //     concatMap((action) => {
-  //       return this._breedService.getBreedDetails(action.selectedBreed).pipe(
-  //         map((breed) => {
-  //           console.log('Service returned selected breed:', breed);
-  //           return getBreedDetailsSuccess({ breed });
-  //         }),
-  //         catchError((e) => of(getBreedDetailsFailure({ error: e })))
-  //       );
-  //     }),
-  //   );
-  // });
-
   getBreedDetails$ = createEffect(() => {
     return this._actions$.pipe(
       ofType(getBreedDetails),
       concatMap((action) => {
         return this._breedService.getBreedDetails(action.selectedBreed).pipe(
           map((breed) => {
-            console.log('Service returned selected breed:', breed);
             return getBreedDetailsSuccess({ breed });
           }),
-          catchError((e) => of(getBreedDetailsFailure({ error: e })))
+          catchError((error) => of(getBreedDetailsFailure({ error: error.message || 'An unexpected error occurred' }))),
         );
       }),
     );

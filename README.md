@@ -30,6 +30,16 @@ http://localhost:3000/api/breed?name=labr
 
 http://localhost:3000/api/breed/details?name=shep
 
+### Error handling / validation
+
+npm install class-validator class-transformer
+
+#### Test
+
+http://localhost:4200/breed/Unknown
+
+![img.png](apps/breed-finder/src/assets/images/error-message.png)
+
 ## Front-end
 
 ### NgRx

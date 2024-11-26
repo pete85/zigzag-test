@@ -1,6 +1,7 @@
-import { Controller, Get, Query } from '@nestjs/common';
+import { Controller, Get, Query, UsePipes, ValidationPipe } from '@nestjs/common';
 import { BreedService } from './breed.service';
 import {Breed} from './breed.model';
+import {BreedDetailsDto} from './dto/breed-details.dto';
 
 @Controller('breed')
 export class BreedController {
@@ -29,6 +30,7 @@ export class BreedController {
    * @param name
    */
   @Get('details')
+  @UsePipes(new ValidationPipe({ transform: true }))
   getBreedDetails(@Query('name') name: string): Breed[] {
     return this.breedService.getBreedByName(name);
   }

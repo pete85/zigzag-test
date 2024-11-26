@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { Breed } from '../../interfaces/breed.model';
 import { ActivatedRoute } from '@angular/router';
 import { getBreedDetails } from '../../state/breeds/breed.actions';
-import { selectBreedDetails } from '../../state/breeds/breed.selectors';
+import { selectBreedDetails, selectBreedError } from '../../state/breeds/breed.selectors';
 
 @Component({
   selector: 'app-breed-details',
@@ -19,6 +19,7 @@ export class BreedDetailsComponent implements OnInit {
   private _route = inject(ActivatedRoute);
 
   breedDetails$: Observable<Breed[] | null> = this._store.select(selectBreedDetails);
+  error$: Observable<string | null> = this._store.select(selectBreedError);
 
   ngOnInit() {
     const selectedBreedName = this._route.snapshot.paramMap.get('name') ?? '';

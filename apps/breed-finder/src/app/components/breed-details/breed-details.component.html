@@ -61,6 +61,12 @@
 
 <ng-template #loading>
   <div class="loading tw-fixed tw-inset-0 tw-flex tw-justify-center tw-items-center tw-text-center">
-    <p class="preloaderText">Loading breed details...</p>
+    <div *ngIf="error$ | async as error; else preloaderText" class="tw-p-10">
+      <h4 class="tw-text-red-900">{{ error }}</h4>
+    </div>
+    <ng-template #preloaderText>
+      <h4 class="preloaderText">Loading breed details...</h4>
+    </ng-template>
+
   </div>
 </ng-template>
