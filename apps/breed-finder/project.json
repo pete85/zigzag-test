@@ -20,7 +20,7 @@
           "apps/breed-finder/src/favicon.ico",
           "apps/breed-finder/src/assets"
         ],
-        "styles": ["apps/breed-finder/src/styles.scss"],
+        "styles": ["apps/breed-finder/src/app/styles/styles.scss"],
         "scripts": []
       },
       "configurations": {

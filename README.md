@@ -9,6 +9,10 @@ Underscores for private
 
 Scripts in package.json to run both FE & BE
 
+added tailwind
+
+responsive
+
 ### Restructuring
 
 components
@@ -41,3 +45,5 @@ export enum ActionTypes {
   GET_BREED_LIST_FAILURE = '[Breed] Get Breed List Failure',
 }
 ```
+
+added selectors
