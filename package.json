@@ -2,7 +2,15 @@
   "name": "@tech-test/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build:backend": "nx build backend",
+    "build:frontend": "nx build breed-finder",
+    "build:all": "npm run build:backend && npm run build:frontend",
+    "serve:backend": "nx serve backend",
+    "serve:frontend": "nx serve breed-finder",
+    "serve:all": "concurrently \"npm run serve:backend\" \"npm run serve:frontend\"",
+    "start": "npm run build:all && npm run serve:all"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~17.3.0",
@@ -62,6 +70,7 @@
     "@types/node": "18.16.9",
     "@typescript-eslint/eslint-plugin": "^7.3.0",
     "@typescript-eslint/parser": "^7.3.0",
+    "concurrently": "^9.1.0",
     "eslint": "~8.57.0",
     "eslint-config-prettier": "^9.0.0",
     "jest": "^29.4.1",
