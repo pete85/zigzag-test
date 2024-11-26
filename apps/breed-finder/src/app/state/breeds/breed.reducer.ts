@@ -1,5 +1,5 @@
 import { createFeature, createReducer, on } from '@ngrx/store';
-import { BreedState } from './breed.model';
+import { BreedState } from '../../interfaces/breed.model';
 import { getBreedListSuccess } from './breed.actions';
 
 export const initialState: BreedState = {

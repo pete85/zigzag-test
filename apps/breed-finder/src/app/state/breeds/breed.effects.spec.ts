@@ -4,7 +4,7 @@ import { MockStore, provideMockStore } from '@ngrx/store/testing';
 import { cold, hot } from 'jasmine-marbles';
 import { Observable } from 'rxjs';
 import { BreedEffects } from './breed.effects';
-import { BreedService } from './breed.service';
+import { BreedService } from '../../services/breed/breed.service';
 import { getBreedList, getBreedListFailure, getBreedListSuccess } from './breed.actions';
 
 describe('CourseProgressEffects', () => {

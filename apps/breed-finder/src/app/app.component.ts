@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { HeaderPageComponent } from './header/header.component';
+import { HeaderPageComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @Component({

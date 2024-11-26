@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BreedService } from './breed.service';
+import { BreedService } from '../../services/breed/breed.service';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { getBreedList, getBreedListFailure, getBreedListSuccess } from './breed.actions';
 import { catchError, concatMap, map, of } from 'rxjs';
