@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Store } from '@ngrx/store';
-import { getBreedList } from '../../state/breeds/breed.actions';
+import { getBreedList, selectBreed } from '../../state/breeds/breed.actions';
 import { breedReducer } from '../../state/breeds/breed.reducer';
 import { AsyncPipe } from '@angular/common';
-import { Observable } from 'rxjs';
-import { Breed } from '../../../../../backend/src/app/breed.model';
+import { Observable, startWith } from 'rxjs';
 
 @Component({
   standalone: true,
@@ -15,8 +14,9 @@ import { Breed } from '../../../../../backend/src/app/breed.model';
   styleUrls: ['overview.page.scss']
 })
 export class OverviewPageComponent implements OnInit {
-  breedList$: Observable<string[]> = this._store.select(breedReducer.selectBreedList);
-  selectedBreed!: string;
+  breedList$: Observable<string[]> = this._store.select(breedReducer.selectBreedList).pipe(
+    startWith([])
+  );
 
   constructor(private _store: Store) {}
 
@@ -24,7 +24,7 @@ export class OverviewPageComponent implements OnInit {
     this._store.dispatch(getBreedList())
   }
 
-  selectBreed() {
-
+  selectBreed(breed: string) {
+    this._store.dispatch(selectBreed({ selectedBreed: breed }));
   }
 }

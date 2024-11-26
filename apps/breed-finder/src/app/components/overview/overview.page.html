@@ -6,7 +6,7 @@
 
     @for (breed of breedList$ | async; track breed) {
       <div class="col-12 col-sm-6 col-lg-3">
-        <button type="button" class="btn btn-secondary overview__breed-button">{{ breed }}</button>
+        <button type="button" class="btn btn-secondary overview__breed-button" (click)="selectBreed(breed)">{{ breed }}</button>
       </div>
     }
   </div>

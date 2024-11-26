@@ -1,9 +1,10 @@
 import { createFeature, createReducer, on } from '@ngrx/store';
 import { BreedState } from '../../interfaces/breed.model';
-import { getBreedListSuccess } from './breed.actions';
+import { getBreedListSuccess, selectBreed } from './breed.actions';
 
 export const initialState: BreedState = {
-  breedList: []
+  breedList: [],
+  selectedBreed: null
 };
 
 export const breedReducer = createFeature({
@@ -15,6 +16,10 @@ export const breedReducer = createFeature({
         ...state,
         breedList: breeds
       }
-    })
+    }),
+    on(selectBreed, (state, { selectedBreed }) => ({
+      ...state,
+      selectedBreed
+    }))
   )
 });

@@ -1,3 +1,4 @@
 export interface BreedState {
-  breedList: string[]
+  breedList: string[],
+  selectedBreed: string | null;
 }
