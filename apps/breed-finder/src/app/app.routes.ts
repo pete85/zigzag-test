@@ -1,5 +1,5 @@
 import { Route } from '@angular/router';
-import { OverviewPageComponent } from './components/overview/overview.page';
+import { OverviewPageComponent } from './components/overview/overview.component';
 
 export const appRoutes: Route[] = [
   { path: '', component: OverviewPageComponent },

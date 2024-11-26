@@ -10,8 +10,8 @@ import { selectBreedList } from '../../state/breeds/breed.selectors';
   standalone: true,
   imports: [AsyncPipe],
   selector: 'app-overview',
-  templateUrl: './overview.page.html',
-  styleUrls: ['overview.page.scss'],
+  templateUrl: './overview.component.html',
+  styleUrls: ['overview.component.scss'],
 })
 export class OverviewPageComponent implements OnInit {
   breedList$: Observable<string[]> = this._store.select(selectBreedList);
