@@ -1,0 +1,183 @@
+[
+  {
+    "name": "Labrador Retriever",
+    "description": "Labrador Retrievers are friendly, outgoing, and high-spirited companions who have more than enough affection to go around for a family looking for a medium-to-large dog.",
+    "size": "Medium to Large",
+    "origin": "Canada, United Kingdom",
+    "lifeExpectancy": "10-12 years",
+    "temperament": [
+      "Friendly",
+      "Outgoing",
+      "Gentle",
+      "Intelligent"
+    ],
+    "image": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-07/Labrador-Retriever.jpg?itok=BrVXkZic"
+  },
+  {
+    "name": "German Shepherd",
+    "description": "German Shepherds are loyal, courageous, and highly trainable. They are well-suited for a wide range of tasks including police work, search and rescue, and serving as guide dogs.",
+    "size": "Large",
+    "origin": "Germany",
+    "lifeExpectancy": "9-13 years",
+    "temperament": [
+      "Loyal",
+      "Confident",
+      "Courageous",
+      "Smart"
+    ],
+    "image": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-07/German-Shepherd-Dog.jpg?itok=eQlRJxqe"
+  },
+  {
+    "name": "Golden Retriever",
+    "description": "Golden Retrievers are friendly, intelligent, and devoted. They are excellent family pets and also excel in various dog sports such as obedience and agility.",
+    "size": "Medium to Large",
+    "origin": "Scotland",
+    "lifeExpectancy": "10-12 years",
+    "temperament": [
+      "Friendly",
+      "Intelligent",
+      "Devoted",
+      "Affectionate"
+    ],
+    "image": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-07/Golden-Retriever.jpg?itok=Y0uGepPW"
+  },
+  {
+    "name": "Beagle",
+    "description": "Beagles are curious, merry, and friendly. They have a great sense of smell and are often used as scent hounds in various capacities.",
+    "size": "Small to Medium",
+    "origin": "United Kingdom",
+    "lifeExpectancy": "10-15 years",
+    "temperament": [
+      "Curious",
+      "Merry",
+      "Friendly",
+      "Loving"
+    ],
+    "image": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-07/Beagle.jpg?itok=ewIKYJgr"
+  },
+  {
+    "name": "Bulldog",
+    "description": "Bulldogs are known for their loose, saggy skin, distinctive pushed-in nose, and adorable wrinkled face. They are generally gentle, affectionate dogs that love to be around their families.",
+    "size": "Medium",
+    "origin": "United Kingdom",
+    "lifeExpectancy": "8-10 years",
+    "temperament": [
+      "Docile",
+      "Willful",
+      "Friendly"
+    ],
+    "image": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-07/Bulldog.jpg?itok=iJJGwZeh"
+  },
+  {
+    "name": "Poodle",
+    "description": "Poodles are highly intelligent and trainable dogs. They come in three sizes: standard, miniature, and toy. Poodles are known for their curly, hypoallergenic coats.",
+    "size": "Varies (Standard, Miniature, Toy)",
+    "origin": "Germany",
+    "lifeExpectancy": "10-18 years",
+    "temperament": [
+      "Intelligent",
+      "Alert",
+      "Active",
+      "Trainable"
+    ],
+    "image": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-07/Poodle-Standard.jpg?itok=mS4jg2Nv"
+  },
+  {
+    "name": "Boxer",
+    "description": "Boxers are energetic, playful, and intelligent dogs. They have a strong, muscular build and are known for their distinctive wrinkled face and undershot jaw.",
+    "size": "Medium to Large",
+    "origin": "Germany",
+    "lifeExpectancy": "10-12 years",
+    "temperament": [
+      "Playful",
+      "Energetic",
+      "Loyal",
+      "Affectionate"
+    ],
+    "image": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-07/Boxer.jpg?itok=-9qbEDKS"
+  },
+  {
+    "name": "Dachshund",
+    "description": "Dachshunds, also known as wiener dogs or sausage dogs, are long-bodied, short-legged dogs. They are curious, brave, and sometimes stubborn.",
+    "size": "Small to Medium",
+    "origin": "Germany",
+    "lifeExpectancy": "12-16 years",
+    "temperament": [
+      "Curious",
+      "Brave",
+      "Stubborn",
+      "Playful"
+    ],
+    "image": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2024-03/Dachshund-Wire-Haired.jpg?itok=Lf7S_lkO"
+  },
+  {
+    "name": "Siberian Husky",
+    "description": "Siberian Huskies are strong, energetic, and resilient dogs. They have a thick double coat and striking facial masks. Huskies are known for their friendly and outgoing nature.",
+    "size": "Medium to Large",
+    "origin": "Russia",
+    "lifeExpectancy": "12-14 years",
+    "temperament": [
+      "Friendly",
+      "Alert",
+      "Gentle",
+      "Outgoing"
+    ],
+    "image": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-08/Siberian-Husky.jpg?itok=HuqnI7Cl"
+  },
+  {
+    "name": "Rottweiler",
+    "description": "Rottweilers are powerful, confident, and loyal dogs. They have a distinctive black and tan coat and are known for their strength and protective instincts.",
+    "size": "Large",
+    "origin": "Germany",
+    "lifeExpectancy": "8-10 years",
+    "temperament": [
+      "Loyal",
+      "Confident",
+      "Courageous",
+      "Protective"
+    ],
+    "image": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-08/Rottweiler.jpg?itok=6lA0l2Qr"
+  },
+  {
+    "name": "Shih Tzu",
+    "description": "Shih Tzus are affectionate, outgoing, and playful dogs. They have a long, flowing coat that requires regular grooming. Shih Tzus are great companions and thrive on human interaction.",
+    "size": "Small",
+    "origin": "China",
+    "lifeExpectancy": "10-18 years",
+    "temperament": [
+      "Affectionate",
+      "Outgoing",
+      "Playful",
+      "Alert"
+    ],
+    "image": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-08/Shih-Tzu.jpg?itok=hke8FeY9"
+  },
+  {
+    "name": "Pomeranian",
+    "description": "Pomeranians are lively, friendly, and extroverted dogs. They have a thick double coat and a fox-like expression. Pomeranians are great companions and do well in various living situations.",
+    "size": "Small",
+    "origin": "Germany, Poland",
+    "lifeExpectancy": "12-16 years",
+    "temperament": [
+      "Lively",
+      "Friendly",
+      "Extroverted",
+      "Intelligent"
+    ],
+    "image": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-07/Pomeranian.jpg?itok=BGe-1DFz"
+  },
+  {
+    "name": "Great Dane",
+    "description": "Great Danes are gentle giants known for their imposing size and friendly demeanor. Despite their large size, they are affectionate, gentle, and great with children.",
+    "size": "Extra Large",
+    "origin": "Germany",
+    "lifeExpectancy": "7-10 years",
+    "temperament": [
+      "Gentle",
+      "Friendly",
+      "Affectionate",
+      "Reserved"
+    ],
+    "image": "https://www.purina.co.uk/sites/default/files/styles/square_medium_440x440/public/2022-07/Great-Dane.jpg?itok=593KgkUQ"
+  }
+]
