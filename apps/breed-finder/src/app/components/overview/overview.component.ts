@@ -24,6 +24,6 @@ export class OverviewPageComponent implements OnInit {
 
   selectBreed(breed: string) {
     this._store.dispatch(selectBreed({ selectedBreed: breed }));
-    this._router.navigate(['/breed', breed]).then(() => null);
+    this._router.navigate(['/breed', breed]);
   }
 }

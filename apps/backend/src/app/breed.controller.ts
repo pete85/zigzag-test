@@ -1,7 +1,12 @@
-import { Controller, Get, Query, UsePipes, ValidationPipe } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Query,
+  UsePipes,
+  ValidationPipe,
+} from '@nestjs/common';
 import { BreedService } from './breed.service';
-import {Breed} from './breed.model';
-import {BreedDetailsDto} from './dto/breed-details.dto';
+import { Breed } from './breed.model';
 
 @Controller('breed')
 export class BreedController {

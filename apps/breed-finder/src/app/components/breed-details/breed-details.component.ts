@@ -22,8 +22,11 @@ export class BreedDetailsComponent implements OnInit {
   error$: Observable<string | null> = this._store.select(selectBreedError);
 
   ngOnInit() {
-    const selectedBreedName = this._route.snapshot.paramMap.get('name') ?? '';
+    this.getBreedDetails();
+  }
 
+  getBreedDetails() {
+    const selectedBreedName = this._route.snapshot.paramMap.get('name') ?? '';
     if (selectedBreedName) {
       this._store.dispatch(getBreedDetails({ selectedBreed: selectedBreedName }));
     }

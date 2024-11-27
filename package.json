@@ -9,7 +9,10 @@
     "serve:backend": "nx serve backend",
     "serve:frontend": "nx serve breed-finder",
     "serve:all": "concurrently \"npm run serve:backend\" \"npm run serve:frontend\"",
-    "start": "npm run build:all && npm run serve:all"
+    "start": "npm run build:all && npm run serve:all",
+    "test:backend": "nx test backend",
+    "test:frontend": "nx test breed-finder",
+    "test:all": "npm run test:backend && npm run test:frontend"
   },
   "private": true,
   "dependencies": {
