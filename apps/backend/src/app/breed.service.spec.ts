@@ -18,8 +18,7 @@ describe('BreedService', () => {
     }).compile();
 
     service = module.get<BreedService>(BreedService);
-
-    // Mock the breed list
+    
     jest.spyOn(service, 'getAllBreeds').mockImplementation(() => mockBreedList.map(breed => breed.name));
     jest.spyOn(service, 'getBreedByName').mockImplementation((name) =>
       mockBreedList.filter((breed) => breed.name.toLowerCase().includes(name.toLowerCase())),

@@ -18,7 +18,7 @@ describe('BreedService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule], // Use HttpClientTestingModule for HTTP testing
+      imports: [HttpClientTestingModule],
       providers: [BreedService],
     });
 
@@ -27,7 +27,7 @@ describe('BreedService', () => {
   });
 
   afterEach(() => {
-    httpMock.verify(); // Ensure no outstanding HTTP requests
+    httpMock.verify();
   });
 
   it('should be created', () => {
@@ -42,7 +42,7 @@ describe('BreedService', () => {
 
       const req = httpMock.expectOne('http://localhost:3000/api/breed');
       expect(req.request.method).toBe('GET');
-      req.flush(mockBreedList); // Simulate HTTP response with mock data
+      req.flush(mockBreedList);
     });
   });
 
@@ -72,7 +72,7 @@ describe('BreedService', () => {
 
       expect(req.request.method).toBe('GET');
       expect(req.request.params.get('name')).toBe('Golden Retriever');
-      req.flush(mockBreedDetails); // Simulate HTTP response with mock data
+      req.flush(mockBreedDetails);
     });
 
     it('should handle errors when retrieving breed details', () => {
